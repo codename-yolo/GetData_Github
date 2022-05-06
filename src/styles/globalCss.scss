@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+body {
+  margin: 0 auto;
+  font-family: 'Jost', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  a:hover {
+    cursor: pointer;
+  }
+}
+code {
+  font-family: 'Jost', sans-serif;
+}
+
+.backgroundContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  img {
+    height: 70vh;
+    width: 70vh;
+    position: absolute;
+    z-index: 3;
+    right: 20px;
+  }
+
+  .clouds {
+    width: 10000px;
+    height: 100%;
+    background: transparent url(../assets/Background/clouds.png) repeat;
+    background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    animation: move-background 10s linear infinite;
+  }
+
+  .stars {
+    background: black url(../assets/Background/stars.png) repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 0;
+  }
+}
+@keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}

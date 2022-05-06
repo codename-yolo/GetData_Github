@@ -1,0 +1,49 @@
+.contentText {
+  width: 100%;
+  img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  pre {
+    position: relative;
+    overflow: auto;
+    padding: 16px;
+    border-radius: 6px;
+    background-color: rgba(221, 221, 221, 0.558);
+    &::before {
+      display: none;
+      position: absolute;
+      content: '';
+      cursor: pointer;
+      background-image: url(../../../../../assets/Icon/copyIcon.svg);
+      background-repeat: no-repeat;
+      background-size: 60% 60%;
+      background-position: center;
+      border-radius: 5px;
+      top: 10px;
+      right: 10px;
+      padding: 15px;
+      background-color: rgb(74 229 255);
+    }
+    &:hover {
+      &::before {
+        display: block;
+      }
+    }
+    code {
+      font-size: 1.2rem;
+      color: red;
+    }
+  }
+  a {
+    color: #58a6ff;
+  }
+  p {
+    margin: 10px 0;
+  }
+  h2,
+  h3,
+  h4 {
+    margin: 20px 0;
+  }
+}
