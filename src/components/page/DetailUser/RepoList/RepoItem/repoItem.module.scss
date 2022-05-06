@@ -1,0 +1,123 @@
+.repoItem {
+  position: relative;
+  box-shadow: 0 15px 30px 1px grey;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  flex-basis: 30%;
+  margin-bottom: 40px;
+  height: 400px;
+  .repoInfo {
+    text-align: left;
+    overflow: hidden;
+    height: 100%;
+    float: left;
+    width: 100%;
+    padding: 10px;
+    .top {
+      height: 60%;
+    }
+    .bottom {
+      height: 40%;
+    }
+    h3 {
+      position: relative;
+      text-align: left;
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 25px;
+      color: #344055;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    h4 {
+      text-align: left;
+      margin-bottom: 15px;
+    }
+    h5 {
+      text-align: right;
+      margin-top: 15px;
+    }
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 10;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: left;
+      font-size: 17px;
+      color: #7d7d7d;
+    }
+  }
+  .repoDetail {
+    position: absolute;
+    transition: all 0.3s ease-out;
+    display: inline-block;
+    overflow: hidden;
+    height: 100%;
+    width: 60%;
+    right: 0;
+    display: inline-block;
+    .detail {
+      background: rgba(27, 26, 26, 0.9);
+      transition: all 0.3s ease-out;
+      cursor: no-drop;
+      transform: translateX(100%);
+      position: absolute;
+      line-height: 1.8;
+      text-align: left;
+      font-size: 80%;
+      color: #fff;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      h2 {
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+        font-size: 18px;
+      }
+      ul {
+        padding-left: 15px;
+        li {
+          strong {
+            span {
+              padding-right: 5px;
+            }
+          }
+          a {
+            color: rgb(20, 228, 207);
+          }
+          transition: 0.3s ease;
+          &:hover {
+            transform: translateX(50px) scale(1.3);
+          }
+        }
+      }
+    }
+  }
+  &:hover {
+    .detail {
+      transform: translateX(0);
+    }
+  }
+}
+
+/*====== Responsive screen (MEDIUM : =< 900px)  =======*/
+
+@media screen and (max-width: 900px) {
+  .repoItem {
+    flex-basis: 47%;
+  }
+}
+
+/*====== Responsive screen (SMALL: =< 600px) =======*/
+
+@media screen and (max-width: 600px) {
+  .repoItem {
+    flex-basis: 100%;
+  }
+}

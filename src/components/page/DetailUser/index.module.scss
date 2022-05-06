@@ -1,0 +1,205 @@
+.containerRepo {
+  width: 100%;
+  .header {
+    position: relative;
+    color: white;
+    display: flex;
+    padding: 10px 20px;
+    h4 {
+      font-weight: 200;
+    }
+    .avatar {
+      display: flex;
+      position: relative;
+      overflow: hidden;
+      width: 315px;
+      margin-right: 15px;
+      justify-content: center;
+      align-items: center;
+      --border-width: 5px;
+      border-radius: var(--border-width);
+      &::after {
+        position: absolute;
+        z-index: 1;
+        content: '';
+        top: calc(-1 * var(--border-width));
+        left: calc(-1 * var(--border-width));
+        width: calc(100% + var(--border-width) * 2);
+        height: calc(100% + var(--border-width) * 2);
+        background: linear-gradient(
+          60deg,
+          hsl(224, 85%, 66%),
+          hsl(269, 85%, 66%),
+          hsl(314, 85%, 66%),
+          hsl(359, 85%, 66%),
+          hsl(44, 85%, 66%),
+          hsl(89, 85%, 66%),
+          hsl(134, 85%, 66%),
+          hsl(179, 85%, 66%)
+        );
+        background-size: 300% 300%;
+        background-position: 0 50%;
+        border-radius: calc(2 * var(--border-width));
+        animation: moveGradient 4s alternate infinite;
+      }
+      &::before {
+        background: linear-gradient(
+          to right,
+          fade_out(#fff, 1) 0%,
+          fade_out(#fff, 0.7) 100%
+        );
+        content: '';
+        display: block;
+        height: 100%;
+        left: -75%;
+        position: absolute;
+        top: 0;
+        transform: skewX(-25deg);
+        width: 50%;
+        z-index: 3;
+        animation: shine 1.5s infinite;
+      }
+      img {
+        display: block;
+        z-index: 2;
+        padding: 5px;
+        object-fit: cover;
+        max-width: 100%;
+        min-height: 100%;
+        border-radius: var(--border-width);
+      }
+<<<<<<< HEAD
+=======
+      .loading {
+        background-color: transparent;
+        inset: 0;
+        z-index: 1000;
+        img {
+          margin: auto;
+        }
+      }
+>>>>>>> a1a0ff9 (Search github api complete)
+    }
+    .info {
+      h1 {
+        margin: 0;
+      }
+      h2 {
+        small {
+          display: inline-block;
+          margin-left: 10px;
+          font-weight: 400;
+          color: rgb(156, 149, 149);
+          font-size: 65%;
+        }
+      }
+      h4 {
+        margin: 10px 0;
+        span {
+          margin-right: 5px;
+        }
+      }
+      ul {
+        display: flex;
+        li {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .content {
+    .title {
+      position: relative;
+      max-width: 600px;
+      margin: 20px auto;
+      overflow: hidden;
+      h2 {
+        text-align: center;
+        color: white;
+        animation: slideText 10s linear infinite;
+      }
+    }
+
+    .listRepo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .repoItem {
+        width: 20%;
+      }
+    }
+  }
+  .backButton {
+    position: absolute;
+    z-index: 3;
+    border-radius: 20% !important;
+    background-image: url(../../../assets/Icon/iconBack.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    max-width: 100%;
+    margin: 15px 0 0 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: red;
+    border: none !important;
+
+    transition: background-color 1s, transform 0.5s;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: black;
+      box-shadow: 5px 0px 18px 0px rgba(105, 105, 105, 0.8);
+    }
+  }
+}
+
+/*====== Responsive screen (MEDIUM : =< 900px)  =======*/
+@media screen and (max-width: 900px) {
+}
+
+/*====== Responsive screen (SMALL: =< 600px) =======*/
+
+@media screen and (max-width: 600px) {
+  .containerRepo {
+    .header {
+      flex-direction: column;
+      .info {
+        margin-top: 20px;
+        margin-left: 0;
+      }
+      .avatar {
+        margin-right: 0;
+        width: 100%;
+        img {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+    .content {
+      margin: 0 10px;
+    }
+  }
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes slideText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

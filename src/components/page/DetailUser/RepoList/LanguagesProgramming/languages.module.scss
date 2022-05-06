@@ -1,0 +1,189 @@
+.html {
+  background-color: #e34c26 !important;
+}
+.css {
+  background-color: #563d7c !important;
+}
+.javascript {
+  background-color: #f1e05a !important;
+}
+.vim {
+  background-color: #199f4b !important;
+}
+.python {
+  background-color: #3572a5 !important;
+}
+
+.shell {
+  background-color: #89e051 !important;
+}
+.ruby {
+  background-color: #701516 !important;
+}
+
+.haskell {
+  background-color: #5e5086 !important;
+}
+.typeScript {
+  background-color: #2b7489 !important;
+}
+.go {
+  background-color: #00add8 !important;
+}
+.stylus {
+  background-color: #ff0202 !important;
+}
+.makefile {
+  background-color: #427819 !important;
+}
+.handlebars {
+  background-color: #444940 !important;
+}
+.erLang {
+  background-color: #640664 !important;
+}
+.c {
+  background-color: #555555 !important;
+}
+
+.lua {
+  background-color: #000080 !important;
+}
+.java {
+  background-color: #b07219 !important;
+}
+.php {
+  background-color: #4f5d95 !important;
+}
+.cSharp {
+  background-color: #178600 !important;
+}
+.protocolBuffererLang {
+  background-color: #b0686c !important;
+}
+.m4 {
+  background-color: rgb(151, 10, 10) !important;
+}
+.coffeeScript {
+  background-color: rgb(51, 6, 6) !important;
+}
+.dockerFile {
+  background-color: rgb(65, 253, 2) !important;
+}
+.cPlus {
+  background-color: #f34b7d !important;
+}
+.puppet {
+  background-color: #f005f4 !important;
+}
+.gherkin {
+  background-color: #5b2063 !important;
+}
+.objectiveC {
+  background-color: #b4bdbe !important;
+}
+.cMake {
+  background-color: #08e0fd !important;
+}
+.smarty {
+  background-color: #f0c040 !important;
+}
+.scss {
+  background-color: #f506d5 !important;
+}
+.handleBars {
+  background-color: #4300f9 !important;
+}
+.apacheConf {
+  background-color: #1088af !important;
+}
+.swift {
+  background-color: #eef73d !important;
+}
+.xslt {
+  background-color: #62db85 !important;
+}
+.arduino {
+  background-color: #1d1498 !important;
+}
+.cuda {
+  background-color: #62afdb !important;
+}
+.apex {
+  background-color: #cc00ff !important;
+}
+.yacc {
+  background-color: #7be7f1 !important;
+}
+.lex {
+  background-color: #6c2985 !important;
+}
+.perl {
+  background-color: #ffd000 !important;
+}
+.assembly {
+  background-color: #c9c19b !important;
+}
+.arc {
+  background-color: #3c3618 !important;
+}
+.emacsLisp {
+  background-color: #857e5c !important;
+}
+.scheme {
+  background-color: #347406 !important;
+}
+.vue {
+  background-color: #02d19d !important;
+}
+.vbScript {
+  background-color: #585f5d !important;
+}
+.qMake {
+  background-color: #62a897 !important;
+}
+.apacheConf {
+  background-color: #2e0606 !important;
+}
+.hack {
+  background-color: #6c62a8 !important;
+}
+.fSharp {
+  background-color: #0c043d !important;
+}
+.batchFile {
+  background-color: #b775ae !important;
+}
+.listNameLanguage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  overflow: hidden;
+  div {
+    line-height: 1.6;
+    margin-right: 10px;
+  }
+}
+.dot {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.progress {
+  display: flex;
+  height: 10px;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  outline: 1px solid transparent;
+  :first-child {
+    margin-left: 0 !important;
+  }
+  span {
+    outline: 2px solid transparent;
+  }
+}
